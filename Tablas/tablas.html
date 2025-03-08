@@ -1,0 +1,464 @@
+<!--
+Facultad de Arquitectura
+Colegio de Diseño Grafico
+Diseño de Interfaces Graficas
+201756519 Daniel Gutierrez Guillermo Miguel
+!-->
+<html>
+    <head>
+        <title>TABLAS</title>
+       <!-- <style type="text/css">
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+            header,nav,main,footer{
+                width: 100%;
+                padding: 30px;
+                color:beige;
+            }
+            header{
+                height: 100px;
+                background-color: saddlebrown;
+                
+            }
+            nav{
+                height: auto;
+                background-color: orange;
+            }
+            main{
+                height: auto;
+                background-color: sandybrown;
+            }
+            footer{
+                height: 60px;
+                background-color: saddlebrown;
+            }
+            section{
+                width: 70%;
+                height: auto;
+                background-color: bisque;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 30px;
+                color: brown;
+                padding: 30px;
+                overflow-x: auto;
+            }
+            h2{
+                margin-bottom: 20px;
+            }
+            header,footer{
+                text-align: center;
+            }
+            nav ul{
+                text-align: center;
+            }
+            nav ul li{
+                width: 10%;
+                background-color: lightyellow;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                list-style-type: none;
+                padding: 10px;
+                display: inline-block;
+            }
+            nav ul li a{
+                text-decoration: none;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            #tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_buap th{
+                background-color: coral;
+                height: 40px;
+            }
+            #tab_buap td{
+                background-color: wheat;
+                color: saddlebrown;
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_buap th, #tab_buap td{
+                border-width: 2px;
+                border-color: crimson;
+                border-style: solid;
+            }
+            #tab_libros{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_libros th{
+                background-color: darkgreen;
+                height: 40px;
+                color: white;
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: yellowgreen;
+                color: darkgreen;
+            }
+             #tab_libros tbody tr:nth-child(odd){
+                background-color: palegreen;
+                color: darkgreen;
+            }
+            #tab_libros tfoot tr{
+                background-color: palegreen;
+                color: darkgreen;
+            }
+            #tab_libros td{
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_pelis{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                /*border-spacing: 10px; separa las celdas de la tabla*/
+                border-collapse: collapse;
+            }
+            #tab_pelis th{
+                background-color: skyblue;
+                color: darkblue;
+                height: 50px;
+                padding: 10px;
+            }
+            #tab_pelis th,#tab_pelis td{
+                border-width: 3px;
+                border-style: solid;
+                border-color: deepskyblue;
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_pelis tbody tr:hover{
+                background-color: yellow;
+            }
+            /*#tab_pelis tbody tr td:hover{ solo celdas
+                background-color: yellow;
+            }*/
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: deeppink;
+            }
+            #tab_series th,#tab_series td{
+                border:1px solid pink;
+                padding: 10px;
+            }
+            #tab_series th{
+                background-color: mediumvioletred;
+                color: pink;
+            }
+            #tab_series td{
+                color:white;
+            }
+        </style> !-->
+        <link rel="stylesheet" href="/CSS_STYLE/style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>TABLAS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="formatos_de_texto.html">Formatos</a></li>
+                <li><a href="Mi%20lista.html">Listas</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="">Imagenes</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="buap">
+                <h2>Tabla simple con identificador</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt. Donec est diam, ultricies non urna tristique, imperdiet ultrices eros. Aliquam vestibulum metus ut scelerisque congue. Duis luctus, orci sit amet malesuada tempus, eros neque accumsan diam, sit amet accumsan est purus sed ex. Proin faucibus, felis eget porttitor sodales, purus mauris maximus augue, et.</p>
+                <table id="tab_buap" border="1">
+                    <thead> 
+                        <tr>
+                            <th>Matriculas</th>
+                            <th>Nombre</th>
+                            <th>Facultad</th>
+                            <th>Celurar</th>
+                            <th>eMail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201756519</td>
+                            <td>Daniel Gutierrez</td>
+                            <td>Arquitectura</td>
+                            <td>8798754654</td>
+                            <td>papitomalito@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>202487787</td>
+                            <td>Emilia Perez</td>
+                            <td>Filosofia</td>
+                            <td>78984561230</td>
+                            <td>malarda77@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>201756558</td>
+                            <td>Kerry Catula</td>
+                            <td>Biologia</td>
+                            <td>6667845129</td>
+                            <td>elsapoqliao@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>201456587</td>
+                            <td>Elma Cana</td>
+                            <td>Medicina</td>
+                            <td>3254561987</td>
+                            <td>helplss@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+            </section>
+            <section id="cebra">
+                <h2>Tabla de tipo cebra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt. Donec est diam, ultricies non urna tristique, imperdiet ultrices eros. Aliquam vestibulum metus ut scelerisque congue. Duis luctus, orci sit amet malesuada tempus.</p>
+                
+                <table id="tab_libros" border="1">
+                    <thead> 
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Autor</th>
+                            <th>Editorial</th>
+                            <th>Año</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1984</td>
+                            <td>George Orwell</td>
+                            <td>Secker y Warburg</td>
+                            <td>1949</td>
+                            <td>$272</td>
+                        </tr>
+                        <tr>
+                            <td>El principito</td>
+                            <td>Antoine de Saint-Exupéry</td>
+                            <td>Reynal y Hitchcock</td>
+                            <td>1943</td>
+                            <td>$213</td>
+                        </tr>
+                        <tr>
+                            <td>Drácula</td>
+                            <td>Bram Stoker</td>
+                            <td>Archibald Constable y Co.</td>
+                            <td>1897</td>
+                            <td>$319</td>
+                        </tr>
+                        <tr>
+                            <td>Rayuela</td>
+                            <td>Julio Cortázar</td>
+                            <td>Sudamericana</td>
+                            <td>1963</td>
+                            <td>$379</td>
+                        </tr>
+                        <tr>
+                            <td>Crimen y castigo</td>
+                            <td>Fiódor Dostoyevski</td>
+                            <td>Editorial Rusa</td>
+                            <td>1866</td>
+                            <td>$340</td>
+                        </tr>
+                        <tr>
+                            <td>Moby Dick</td>
+                            <td>Herman Melville</td>
+                            <td>Harper y Brothers</td>
+                            <td>1851</td>
+                            <td>$298</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td>$1816</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="hover">
+                <h2>Tabla de tipo Hover</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt.</p>
+                <table id="tab_pelis" border="1">
+                    <thead> 
+                        <tr>
+                            <th>Título</th>
+                            <th>Director</th>
+                            <th>Año</th>
+                            <th>Estudio</th>
+                            <th>Costo (millones USD)</th>
+                            <th>Recaudado (millones USD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Isla de Perros</td>
+                            <td>Wes Anderson</td>
+                            <td>2018</td>
+                            <td>Indian Paintbrush</td>
+                            <td>$35</td>
+                            <td>$64.2</td>
+                        </tr>
+                        <tr>
+                            <td>El extraño mundo de Jack</td>
+                            <td>Henry Selick</td>
+                            <td>1993</td>
+                            <td>Touchstone Pictures</td>
+                            <td>$24</td>
+                            <td>$91.5</td>
+                        </tr>
+                        <tr>
+                            <td>Coraline</td>
+                            <td>Henry Selick</td>
+                            <td>2009</td>
+                            <td>Laika</td>
+                            <td>$60</td>
+                            <td>$124.6</td>
+                        </tr>
+                        <tr>
+                            <td>Kubo y la búsqueda samurái</td>
+                            <td>Travis Knight</td>
+                            <td>2016</td>
+                            <td>Laika</td>
+                            <td>$60</td>
+                            <td>$77.5</td>
+                        </tr>
+                        <tr>
+                            <td>Pollitos en fuga</td>
+                            <td>Peter Lord, Nick Park</td>
+                            <td>2000</td>
+                            <td>Aardman Animations</td>
+                            <td>$45</td>
+                            <td>$224.8</td>
+                        </tr>
+                        <tr>
+                            <td>Wallace y Gromit: La batalla de los vegetales</td>
+                            <td>Steve Box, Nick Park</td>
+                            <td>2005</td>
+                            <td>Aardman Animations</td>
+                            <td>$30</td>
+                            <td>$192.6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+            </section>
+            <section id="over" style="overflow-x: auto;">
+                <h2>Tabla de tipo Overflow</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu congue purus. Phasellus molestie nulla vel nulla luctus pulvinar. Sed congue, orci a congue interdum, mi urna pharetra est, in lobortis orci mi vitae massa. Aliquam ac purus et augue convallis viverra eu ut metus. Nam placerat purus non risus sodales, quis pharetra urna tincidunt. Donec est diam, ultricies non urna tristique, imperdiet ultrices eros. Aliquam vestibulum metus ut scelerisque congue. Duis luctus, orci sit amet malesuada tempus.</p>
+                <table id="tab_series">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Año</th>
+                            <th>Genero</th>
+                            <th colspan="2">Creador</th>
+                            <th colspan="2">Pais de origen</th>
+                            <th>Temporadas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>House of card</td>
+                            <td>2013</td>
+                            <td>Policial</td>
+                            <td>Beau Willimon</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Hora de aventura</td>
+                            <td>2018</td>
+                            <td>Fantasia</td>
+                            <td>Beau Willimon</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td>Suecia</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Dr House</td>
+                            <td>2004</td>
+                            <td>Drama Medico</td>
+                            <td>David Shore</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Belleza verdadera</td>
+                            <td>2020</td>
+                            <td>Drama romantico</td>
+                            <td>Kim Sang-hyup</td>
+                            <td></td>
+                            <td>Corea del Sur</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Shogun</td>
+                            <td>2024</td>
+                            <td>Drama Historico</td>
+                            <td>Rachel Kondo</td>
+                            <td>Justin Marks</td>
+                            <td>Japon</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Club de cuervos</td>
+                            <td>2015</td>
+                            <td>Drama comedia</td>
+                            <td>Gaz Alazraki</td>
+                            <td></td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li><a href="#buap">Tabla simple</a></li>
+                <li><a href="#cebra">Tabla tipo cebra</a></li>
+                <li><a href="#hover">Tabla tipo hover</a></li>
+                <li><a href="#over">Tabla tipo overflow</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <h5>Elaborado por Guillermo Miguel Daniel Gutierrez</h5>
+        </footer>
+    </body>
+</html>

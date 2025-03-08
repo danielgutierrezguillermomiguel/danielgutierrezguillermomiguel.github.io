@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header,nav,main,footer{
+    width: 95%;
+    padding: 30px;
+    background-color: #09122C;
+    color: #FFFBCA;
+    margin-right: auto;
+    margin-left: auto;
+}
+header,footer{
+    text-align: center;
+    font-size: 48px;
+}
+footer{
+    font-size: 24px;
+}
+nav{
+    height: 80px;
+    background-color: #FFFBCA;
+}
+nav ul{
+    text-align: center;
+    /*background-color: darksalmon;*/
+}
+nav ul li{
+    width: 6%;
+    background-color: #D84040;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+main{
+    height: auto;
+    background-color: #E17564;
+    color: #FFFBCA;
+}
+section{
+    width: 70%;
+    height: auto;
+    background-color: #D84040;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+}
+p{
+    margin-top: 20px;
+}
+img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#img_gif{
+    border-radius: 80%;
+}
+.img_float{
+    width: 30%;
+}
+#img_izq{
+    float: left;
+    margin: 0px;
+    margin-right: 15px;
+}
+#img_der{
+    float: right;
+    margin: 0px;
+    margin-right: 15px;
+}
+video,iframe{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+.box_videos{
+    text-align: center;
+}
+.box_videos section{    
+    width: 45%;
+    min-width: 360px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 550px;
+}
+.box_videos section p{
+    text-align: justify;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "League Spartan", sans-serif;
+}
+form{
+    width: 30%;
+    background-color: lightgray;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: steelblue;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+input [type=text],input [type=password]{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: steelblue;
+    color: dodgerblue;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: lightsteelblue;
+    color: darkblue;
+    font-weight: bolder;
+    border: 5px solid aliceblue;
+}
+
+label{
+    font-weight: bolder;
+    margin-bottom:10px;
+    margin-top: 10px;
+    display: block;
+}
+input[type=submit]{
+    width: 20%;
+    min-width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    background-color: mediumaquamarine;
+    color: aliceblue;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#tab_buap{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_buap th{
+                background-color: coral;
+                height: 40px;
+            }
+            #tab_buap td{
+                background-color: wheat;
+                color: saddlebrown;
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_buap th, #tab_buap td{
+                border-width: 2px;
+                border-color: crimson;
+                border-style: solid;
+            }
+            #tab_libros{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                border-spacing: 10px;
+                border-collapse: collapse;  
+            }
+            #tab_libros th{
+                background-color: darkgreen;
+                height: 40px;
+                color: white;
+            }
+            #tab_libros tbody tr:nth-child(even){
+                background-color: yellowgreen;
+                color: darkgreen;
+            }
+             #tab_libros tbody tr:nth-child(odd){
+                background-color: palegreen;
+                color: darkgreen;
+            }
+            #tab_libros tfoot tr{
+                background-color: palegreen;
+                color: darkgreen;
+            }
+            #tab_libros td{
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_pelis{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                /*border-spacing: 10px; separa las celdas de la tabla*/
+                border-collapse: collapse;
+            }
+            #tab_pelis th{
+                background-color: skyblue;
+                color: darkblue;
+                height: 50px;
+                padding: 10px;
+            }
+            #tab_pelis th,#tab_pelis td{
+                border-width: 3px;
+                border-style: solid;
+                border-color: deepskyblue;
+            }
+            #tab_pelis td{
+                height: 30px;
+                padding: 10px;
+            }
+            #tab_pelis tbody tr:hover{
+                background-color: yellow;
+            }
+            /*#tab_pelis tbody tr td:hover{ solo celdas
+                background-color: yellow;
+            }*/
+            #tab_series{
+                width: 1500px;
+                border-collapse: collapse;
+                background-color: deeppink;
+            }
+            #tab_series th,#tab_series td{
+                border:1px solid pink;
+                padding: 10px;
+            }
+            #tab_series th{
+                background-color: mediumvioletred;
+                color: pink;
+            }
+            #tab_series td{
+                color:white;
+            }
